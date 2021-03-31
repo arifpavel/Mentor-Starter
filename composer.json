@@ -1,0 +1,21 @@
+{
+    "name": "arifpavel/chartmentor",
+    "description": "Versatile chart widgets plugin for elementor.",
+    "require": {},
+    "require-dev": {
+        "giacocorsiglia/wordpress-stubs": "^5.1"
+    },
+    "license": "GPLV2",
+    "authors": [
+        {
+            "name": "Arif Pavel",
+            "email": "pavelpatiya@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "Inc"
+        }
+    }
+}

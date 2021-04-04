@@ -14,7 +14,6 @@ class Main extends Widget_base
     public function __construct($data = [], $args = null)
     {
         parent::__construct($data, $args);
-        // wp_register_style( 'awesomesauce', plugins_url( '/assets/css/awesomesauce.css', ELEMENTOR_AWESOMESAUCE ), array(), '1.0.0' );
     }
 
     public function get_name()

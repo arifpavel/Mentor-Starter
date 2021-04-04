@@ -3,7 +3,10 @@
     "description": "A starter plugin to create an awesome Elementor addon.",
     "require": {},
     "require-dev": {
-        "giacocorsiglia/wordpress-stubs": "^5.1"
+        "giacocorsiglia/wordpress-stubs": "^5.1",
+        "phpunit/phpunit": "^9.1",
+        "brain/monkey": "2.*",
+        "codedungeon/phpunit-result-printer": "dev-master"
     },
     "license": "GPLV2",
     "authors": [
@@ -16,6 +19,11 @@
     "autoload": {
         "psr-4": {
             "Inc\\": "Inc"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "Tests"
         }
     }
 }

@@ -5,9 +5,9 @@ A starter plugin to create elementor addon.
 
 - Wordpress >= 5.4.1
 - PHP >= 7.0
-- Composer >= 1.10.1+
-- node >= 12.16.1+
-- npm >= 6.13.4+
+- Composer >= 1.10.1
+- node >= 12.16.1
+- npm >= 6.13.4
 
 ### Installation
 

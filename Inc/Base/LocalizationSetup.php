@@ -33,6 +33,6 @@ class LocalizationSetup
      */
     public function localizationSetup(): void
     {
-        load_plugin_textdomain(CHARTMENTOR_TEXTDOMAIN, false, CHARTMENTOR_PATH . '/languages/');
+        load_plugin_textdomain(MENTORSTARTER_TEXTDOMAIN, false, MENTORSTARTER_PATH . '/languages/');
     }
 }

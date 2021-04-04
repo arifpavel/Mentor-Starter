@@ -9,7 +9,7 @@ use Elementor\Controls_Manager;
 
 class TextWidget extends Widget_base
 {
-    public static $slug = 'chartmentor-textwidget';
+    public static $slug = 'mentorstarter-textwidget';
 
     public function __construct($data = [], $args = null)
     {
@@ -24,7 +24,7 @@ class TextWidget extends Widget_base
 
     public function get_title()
     {
-        return __('Chartmentor Text', self::$slug);
+        return __('Mentorstarter Text', self::$slug);
     }
 
     public function get_icon()
@@ -51,7 +51,7 @@ class TextWidget extends Widget_base
         $this->start_controls_section(
             'section_content',
             [
-                'label' => __('Content', CHARTMENTOR_TEXTDOMAIN),
+                'label' => __('Content', MENTORSTARTER_TEXTDOMAIN),
                 // 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -59,27 +59,27 @@ class TextWidget extends Widget_base
         $this->add_control(
             'title',
             [
-                'label' => __('Title', CHARTMENTOR_TEXTDOMAIN),
+                'label' => __('Title', MENTORSTARTER_TEXTDOMAIN),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('Title', CHARTMENTOR_TEXTDOMAIN),
+                'default' => __('Title', MENTORSTARTER_TEXTDOMAIN),
             ]
         );
 
         $this->add_control(
             'description',
             [
-                'label' => __('Description', CHARTMENTOR_TEXTDOMAIN),
+                'label' => __('Description', MENTORSTARTER_TEXTDOMAIN),
                 'type' => Controls_Manager::TEXTAREA,
-                'default' => __('Description', CHARTMENTOR_TEXTDOMAIN),
+                'default' => __('Description', MENTORSTARTER_TEXTDOMAIN),
             ]
         );
 
         $this->add_control(
             'content',
             [
-                'label' => __('Content', CHARTMENTOR_TEXTDOMAIN),
+                'label' => __('Content', MENTORSTARTER_TEXTDOMAIN),
                 'type' => Controls_Manager::WYSIWYG,
-                'default' => __('Content', CHARTMENTOR_TEXTDOMAIN),
+                'default' => __('Content', MENTORSTARTER_TEXTDOMAIN),
             ]
         );
 

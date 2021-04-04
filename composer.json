@@ -1,6 +1,6 @@
 {
-    "name": "arifpavel/chartmentor",
-    "description": "Versatile chart widgets plugin for elementor.",
+    "name": "arifpavel/mentorstarter",
+    "description": "A starter plugin for creating elementor addon.",
     "require": {},
     "require-dev": {
         "giacocorsiglia/wordpress-stubs": "^5.1"

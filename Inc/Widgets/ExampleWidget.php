@@ -7,9 +7,9 @@ namespace Inc\Widgets;
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 
-class TextWidget extends Widget_base
+class ExampleWidget extends Widget_base
 {
-    public static $slug = 'mentorstarter-textwidget';
+    public static $slug = 'mentorstarter-examplewidget';
 
     public function __construct($data = [], $args = null)
     {
@@ -24,12 +24,12 @@ class TextWidget extends Widget_base
 
     public function get_title()
     {
-        return __('Mentorstarter Text', self::$slug);
+        return __('Mentor Starter Widget', self::$slug);
     }
 
     public function get_icon()
     {
-        return 'fa fa-caret-down';
+        return 'fa fa-info';
     }
 
     public function get_categories()

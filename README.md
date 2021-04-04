@@ -14,7 +14,7 @@ A starter plugin to create elementor addon.
 1. Clone the repo using git clone into wp plugin directory.
 ``` git clone https://github.com/arifpavel/Mentor-Starter.git```
 2. If you aren't inside the project use cd to enter.
-```cd inpsyder-task```
+```cd Mentor-Starter```
 3. Install composer dependencies.
 ```composer install```
 

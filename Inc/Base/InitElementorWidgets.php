@@ -38,7 +38,7 @@ class InitElementorWidgets
     public static function getWidgets()
     {
         return [
-            \Inc\Widgets\ExampleWidget::class,
+            \Inc\Widgets\ExampleWidget\Main::class,
         ];
     }
 

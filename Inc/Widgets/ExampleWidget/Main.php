@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Inc\Widgets;
+namespace Inc\Widgets\ExampleWidget;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 
-class ExampleWidget extends Widget_base
+class Main extends Widget_base
 {
     public static $slug = 'mentorstarter-examplewidget';
 
@@ -34,7 +34,7 @@ class ExampleWidget extends Widget_base
 
     public function get_categories()
     {
-        return ['general'];
+        return ['basic'];
     }
 
     /**
@@ -52,7 +52,7 @@ class ExampleWidget extends Widget_base
             'section_content',
             [
                 'label' => __('Content', MENTORSTARTER_TEXTDOMAIN),
-                // 'tab' => Controls_Manager::TAB_CONTENT,
+                'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
 
@@ -97,15 +97,8 @@ class ExampleWidget extends Widget_base
      */
     protected function render()
     {
-        $settings = $this->get_settings_for_display();
-
-        $this->add_inline_editing_attributes('title', 'none');
-        $this->add_inline_editing_attributes('description', 'basic');
-        $this->add_inline_editing_attributes('content', 'advanced'); ?>
-		<h2 <?php echo $this->get_render_attribute_string('title'); ?><?php echo wp_kses($settings['title'], []); ?></h2>
-		<div <?php echo $this->get_render_attribute_string('description'); ?><?php echo wp_kses($settings['description'], []); ?></div>
-		<div <?php echo $this->get_render_attribute_string('content'); ?><?php echo wp_kses($settings['content'], []); ?></div>
-		<?php
+        //load render view to show widget output on frontend/website.
+        require_once 'RenderView.php';
     }
 
     /**
@@ -119,15 +112,7 @@ class ExampleWidget extends Widget_base
      */
     protected function _content_template()
     {
-        ?>
-		<#
-		view.addInlineEditingAttributes( 'title', 'none' );
-		view.addInlineEditingAttributes( 'description', 'basic' );
-		view.addInlineEditingAttributes( 'content', 'advanced' );
-		#>
-		<h2 {{{ view.getRenderAttributeString( 'title' ) }}}>{{{ settings.title }}}</h2>
-		<div {{{ view.getRenderAttributeString( 'description' ) }}}>{{{ settings.description }}}</div>
-		<div {{{ view.getRenderAttributeString( 'content' ) }}}>{{{ settings.content }}}</div>
-		<?php
+        //load editor view to show widget output on elementor editor for live editing.
+        require_once 'EditorView.php';
     }
 }

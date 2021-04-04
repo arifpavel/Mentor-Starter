@@ -1,6 +1,6 @@
 {
     "name": "arifpavel/mentorstarter",
-    "description": "A starter plugin for creating elementor addon.",
+    "description": "A starter plugin to create an awesome Elementor addon.",
     "require": {},
     "require-dev": {
         "giacocorsiglia/wordpress-stubs": "^5.1"

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Mentor Starter
 Plugin URI: https://github.com/arifpavel/Mentor-Starter
-Description: A starter plugin for creating elementor addon.
+Description: A starter plugin to create an awesome Elementor addon.
 Version: 0.0.1
 Author: Arif Pavel
 Author URI: https://github.com/arifpavel

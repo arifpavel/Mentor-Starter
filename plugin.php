@@ -3,7 +3,7 @@
 Plugin Name: Mentor Starter
 Plugin URI: https://github.com/arifpavel/Mentor-Starter
 Description: A starter plugin to create an awesome Elementor addon.
-Version: 0.0.1
+Version: 1.0.0
 Author: Arif Pavel
 Author URI: https://github.com/arifpavel
 License: GPL2

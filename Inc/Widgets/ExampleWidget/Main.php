@@ -4,37 +4,18 @@ declare(strict_types=1);
 
 namespace Inc\Widgets\ExampleWidget;
 
-use Elementor\Widget_Base;
+use Inc\Widgets\BaseWidget;
 use Elementor\Controls_Manager;
 
-class Main extends Widget_base
+class Main extends BaseWidget
 {
-    public static $slug = 'mentorstarter-examplewidget';
-
-    public function __construct($data = [], $args = null)
-    {
-        parent::__construct($data, $args);
-    }
-
-    public function get_name()
-    {
-        return self::$slug;
-    }
-
-    public function get_title()
-    {
-        return __('Mentor Starter Widget', self::$slug);
-    }
-
-    public function get_icon()
-    {
-        return 'fa fa-info';
-    }
-
-    public function get_categories()
-    {
-        return ['basic'];
-    }
+    // define protected variables
+    protected $name = 'mentorstarter-examplewidget';
+    protected $title = 'Mentor Starter';
+    protected $icon = 'fa fa-info';
+    protected $categories = [
+        'basic'
+    ];
 
     /**
      * Register the widget controls.

@@ -1,12 +1,12 @@
 {
     "name": "arifpavel/mentorstarter",
     "description": "A starter plugin to create an awesome Elementor addon.",
-    "require": {},
     "require-dev": {
         "giacocorsiglia/wordpress-stubs": "^5.1",
         "phpunit/phpunit": "^9.1",
         "brain/monkey": "2.*",
-        "codedungeon/phpunit-result-printer": "dev-master"
+        "codedungeon/phpunit-result-printer": "dev-master",
+        "arifpavel/elementor-stubs": "3.1.4.1"
     },
     "scripts": {
         "test": "vendor/bin/phpunit"

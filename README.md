@@ -21,7 +21,7 @@ A starter plugin to create elementor addon.
 ### Testing
 
 Mentor Starter has full featured testing environment out of the box.
-1. Run ```vendor/bin/phpunit``` to run phpunit tests. [Brain Moneky](https://brain-wp.github.io/BrainMonkey/docs/wordpress-why-bother.html) along with [PHPUnit](https://phpunit.readthedocs.io/en/9.1/installation.html) used for testing.
+1. Run ```composer test``` to run phpunit tests. [Brain Moneky](https://brain-wp.github.io/BrainMonkey/docs/wordpress-why-bother.html) along with [PHPUnit](https://phpunit.readthedocs.io/en/9.1/installation.html) used for testing.
 
 ### License
 [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)

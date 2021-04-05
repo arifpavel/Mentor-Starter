@@ -8,6 +8,9 @@
         "brain/monkey": "2.*",
         "codedungeon/phpunit-result-printer": "dev-master"
     },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
     "license": "GPLV2",
     "authors": [
         {

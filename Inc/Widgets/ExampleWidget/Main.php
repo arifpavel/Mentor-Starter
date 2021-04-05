@@ -97,7 +97,7 @@ class Main extends Widget_base
     protected function render()
     {
         //load render view to show widget output on frontend/website.
-        require_once 'RenderView.php';
+        require 'RenderView.php';
     }
 
     /**

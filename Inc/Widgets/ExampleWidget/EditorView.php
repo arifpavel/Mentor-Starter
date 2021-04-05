@@ -11,5 +11,5 @@ view.addInlineEditingAttributes( 'content', 'advanced' );
 #>
 <h2 {{{ view.getRenderAttributeString( 'title' ) }}}>{{{ settings.title }}}</h2>
 <div {{{ view.getRenderAttributeString( 'description' ) }}}>{{{ settings.description }}}</div>
-<div {{{ view.getRenderAttributeString( 'content' ) }}}>{!! settings.content !!}</div>
+<div {{{ view.getRenderAttributeString( 'content' ) }}}>{{{ settings.content }}}</div>
 <?php

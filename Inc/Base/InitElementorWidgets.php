@@ -35,7 +35,7 @@ class InitElementorWidgets
      * @param mixed
      * @return array
     */
-    public static function getWidgets()
+    public static function getWidgets(): array
     {
         return [
             \Inc\Widgets\ExampleWidget\Main::class,
@@ -50,7 +50,7 @@ class InitElementorWidgets
      * @param mixed
      * @return null
     */
-    public function loadWidgets()
+    public function loadWidgets(): void
     {
         foreach (self::getWidgets() as $widget) {
             // Let Elementor know about our widget
